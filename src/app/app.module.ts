@@ -6,9 +6,12 @@ import {CommonModule} from "@angular/common";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from "./app.component";
 import { TaskComponent } from './components/task/task.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 const routes: Routes = [
     { path: 'task', component: TaskComponent},
+    { path: 'payment', component: PaymentComponent},
+
 
 ];
 
@@ -25,6 +28,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     TaskComponent,
+    PaymentComponent,
 
 ],
 
