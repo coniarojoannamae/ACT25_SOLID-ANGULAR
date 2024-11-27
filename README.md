@@ -9,7 +9,7 @@ A class should have only one reason to change, meaning it should have only one j
 In Angular, components, services, and modules should be designed to handle a single task. For example, a component should handle UI-related logic, while a service should handle business logic or data fetching.
 
 **Code Example:**
-```Typescript
+Typescript
 // task.model.ts
 export interface Task {
   id: number;
@@ -72,7 +72,6 @@ export class TaskComponent {
     this.tasks = this.taskService.getTasks(); // Refresh the task list
   }
 } 
-'''
 
 ## Open/Closed Principle (OCP):
 
@@ -84,7 +83,7 @@ Software entities should be open for extension but closed for modification.
 
 
 **Code Example:**
-```Typescript
+Typescript
 // payment-method.interface.ts
 export interface PaymentMethod {
   pay(amount: number): void;
@@ -153,7 +152,7 @@ export class PaymentComponent {
   }
 }
 
-'''
+
 ## Liskov Substitution Principle (LSP):
 
 #### Definition:
@@ -163,7 +162,7 @@ Subtypes must be substitutable for their base types without altering the correct
 When creating derived classes, ensure they can stand in for their base classes without causing errors. This is particularly relevant for services and components that extend functionality.
 
 **Code Example:**
-```Typescript
+Typescript
 // shape.interface.ts
 export interface Shape {
   area(): number;
@@ -221,7 +220,7 @@ No client should be forced to depend on methods it does not use.
 Instead of creating large interfaces, break them down into smaller, more specific ones. This allows components and services to implement only the interfaces they need.
 
 **Code Example:**
-```Typescript
+Typescript
 // printer.interface.ts
 export interface Printer {
   print(): void;
@@ -288,7 +287,7 @@ High-level modules should not depend on low-level modules. Both should depend on
 In Angular, the Dependency Injection (DI) system is a powerful way to implement the Dependency Inversion Principle. By injecting dependencies (like services) into components rather than hardcoding them, you can easily swap implementations without modifying the dependent code.
 
 Code Example:**Code Example:**
-```Typescript
+``Typescript
 // notification.interface.ts
 export interface Notification {
   send(message: string): void;
