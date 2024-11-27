@@ -72,7 +72,7 @@ export class TaskComponent {
     this.tasks = this.taskService.getTasks(); // Refresh the task list
   }
 } 
-
+//
 ## Open/Closed Principle (OCP):
 
 #### Definition:
@@ -83,7 +83,7 @@ Software entities should be open for extension but closed for modification.
 
 
 **Code Example:**
-```Typescript
+```Typescript```
 // payment-method.interface.ts
 export interface PaymentMethod {
   pay(amount: number): void;
