@@ -9,13 +9,16 @@ import { TaskComponent } from './components/task/task.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { ShapeComponent } from './components/shape/shape.component';
 import { PrinterComponent } from './components/printer/printer.component';
+import { NotificationComponent } from './components/notification/notification.component';
+//import { NotificationService } from './components/notification/notification.service'; // Adjust the path as necessary
 
 const routes: Routes = [
     { path: 'task', component: TaskComponent},
     { path: 'payment', component: PaymentComponent},
     { path: 'shape', component: ShapeComponent},
     { path: 'printer', component: PrinterComponent},
-
+    { path: 'printer', component: PrinterComponent},
+    { path: 'notification', component: NotificationComponent},
 
 ];
 
@@ -35,13 +38,17 @@ const routes: Routes = [
     PaymentComponent,
     ShapeComponent,
     PrinterComponent,
-
+    NotificationComponent,
+    
 ],
-
-
-bootstrap: [
-    AppComponent
-    ]
+  providers: [
   
+  ],
+
+
+  bootstrap: [
+    AppComponent
+  ]
   })
+
   export class AppModule { }
