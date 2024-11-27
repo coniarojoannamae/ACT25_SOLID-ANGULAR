@@ -72,6 +72,7 @@ export class TaskComponent {
     this.tasks = this.taskService.getTasks(); // Refresh the task list
   }
 } 
+'''
 
 ## Open/Closed Principle (OCP):
 
@@ -80,6 +81,7 @@ Software entities should be open for extension but closed for modification.
 
 #### Application in Angular:
  In Angular, you can achieve OCP by using services, interfaces, and inheritance. This allows you to add new functionality without altering existing code.
+
 
 **Code Example:**
 ```Typescript
@@ -151,6 +153,7 @@ export class PaymentComponent {
   }
 }
 
+'''
 ## Liskov Substitution Principle (LSP):
 
 #### Definition:
