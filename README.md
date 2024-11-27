@@ -3,8 +3,10 @@
 The SOLID principles consist of five design principles intended to make software designs more understandable, flexible, and maintainable. Let's break down each principle:
 
 ## Single Responsibility Principle (SRP):
-Definition: A class should have only one reason to change, meaning it should have only one job or responsibility.
-Application in Angular: In Angular, components, services, and modules should be designed to handle a single task. For example, a component should handle UI-related logic, while a service should handle business logic or data fetching.
+#### Definition:
+A class should have only one reason to change, meaning it should have only one job or responsibility.
+####Application in Angular: 
+In Angular, components, services, and modules should be designed to handle a single task. For example, a component should handle UI-related logic, while a service should handle business logic or data fetching.
 
 **Code Example:**
 ```Typescript
@@ -69,16 +71,18 @@ export class TaskComponent {
     this.taskService.completeTask(id);
     this.tasks = this.taskService.getTasks(); // Refresh the task list
   }
-}
+} 
 
-#Open/Closed Principle (OCP):
+## Open/Closed Principle (OCP):
 
-Definition: Software entities should be open for extension but closed for modification.
+#### Definition:
+Software entities should be open for extension but closed for modification.
 
-Application in Angular: In Angular, you can achieve OCP by using services, interfaces, and inheritance. This allows you to add new functionality without altering existing code.
+#### Application in Angular:
+ In Angular, you can achieve OCP by using services, interfaces, and inheritance. This allows you to add new functionality without altering existing code.
 
-Code Example:
-
+**Code Example:**
+```Typescript
 // payment-method.interface.ts
 export interface PaymentMethod {
   pay(amount: number): void;
@@ -147,14 +151,16 @@ export class PaymentComponent {
   }
 }
 
-#Liskov Substitution Principle (LSP):
+## Liskov Substitution Principle (LSP):
 
-Definition: Subtypes must be substitutable for their base types without altering the correctness of the program.
+#### Definition:
+Subtypes must be substitutable for their base types without altering the correctness of the program.
 
-Application in Angular: When creating derived classes, ensure they can stand in for their base classes without causing errors. This is particularly relevant for services and components that extend functionality.
+#### Application in Angular:
+When creating derived classes, ensure they can stand in for their base classes without causing errors. This is particularly relevant for services and components that extend functionality.
 
-Code Example:
-
+**Code Example:**
+```Typescript
 // shape.interface.ts
 export interface Shape {
   area(): number;
@@ -203,14 +209,16 @@ export class ShapeComponent {
   }
 }
 
-#Interface Segregation Principle (ISP):
+## Interface Segregation Principle (ISP):
 
-Definition: No client should be forced to depend on methods it does not use.
+#### Definition:
+No client should be forced to depend on methods it does not use.
 
-Application in Angular: Instead of creating large interfaces, break them down into smaller, more specific ones. This allows components and services to implement only the interfaces they need.
+#### Application in Angular:
+Instead of creating large interfaces, break them down into smaller, more specific ones. This allows components and services to implement only the interfaces they need.
 
-Code Example:
-
+**Code Example:**
+```Typescript
 // printer.interface.ts
 export interface Printer {
   print(): void;
@@ -268,14 +276,16 @@ export class PrinterComponent {
   }
 }
 
-#Dependency Inversion Principle (DIP):
+## Dependency Inversion Principle (DIP):
 
-Definition: High-level modules should not depend on low-level modules. Both should depend on abstractions. This principle encourages the use of interfaces or abstract classes to allow for flexible and decoupled designs.
+#### Definition:
+High-level modules should not depend on low-level modules. Both should depend on abstractions. This principle encourages the use of interfaces or abstract classes to allow for flexible and decoupled designs.
 
-Application in Angular: In Angular, the Dependency Injection (DI) system is a powerful way to implement the Dependency Inversion Principle. By injecting dependencies (like services) into components rather than hardcoding them, you can easily swap implementations without modifying the dependent code.
+#### Application in Angular:
+In Angular, the Dependency Injection (DI) system is a powerful way to implement the Dependency Inversion Principle. By injecting dependencies (like services) into components rather than hardcoding them, you can easily swap implementations without modifying the dependent code.
 
-Code Example:
-
+Code Example:**Code Example:**
+```Typescript
 // notification.interface.ts
 export interface Notification {
   send(message: string): void;
