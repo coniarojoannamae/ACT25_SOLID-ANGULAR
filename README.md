@@ -9,7 +9,7 @@ A class should have only one reason to change, meaning it should have only one j
 In Angular, components, services, and modules should be designed to handle a single task. For example, a component should handle UI-related logic, while a service should handle business logic or data fetching.
 
 **Code Example:**
-Typescript
+```Typescript
 // task.model.ts
 export interface Task {
   id: number;
@@ -83,7 +83,7 @@ Software entities should be open for extension but closed for modification.
 
 
 **Code Example:**
-Typescript
+```Typescript
 // payment-method.interface.ts
 export interface PaymentMethod {
   pay(amount: number): void;
