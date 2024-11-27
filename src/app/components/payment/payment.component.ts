@@ -9,6 +9,7 @@ import { BitcoinPayment } from './bitcoin-payment';
   templateUrl: './payment.component.html',
   styleUrl: './payment.component.css'
 })
+
 export class PaymentComponent {
   constructor(private paymentService: PaymentService) {}
 
