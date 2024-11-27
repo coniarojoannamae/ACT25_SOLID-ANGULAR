@@ -2,14 +2,14 @@
 ### What are the SOLID Principles?
 The SOLID principles consist of five design principles intended to make software designs more understandable, flexible, and maintainable. Let's break down each principle:
 
-## Single Responsibility Principle (SRP):
+ ```## Single Responsibility Principle (SRP):
 #### Definition:
 A class should have only one reason to change, meaning it should have only one job or responsibility.
 ####Application in Angular: 
 In Angular, components, services, and modules should be designed to handle a single task. For example, a component should handle UI-related logic, while a service should handle business logic or data fetching.
 
-**Code Example:
- ```Typescript
+**Code Example:**
+Typescript
 // task.model.ts
 export interface Task {
   id: number;
@@ -71,7 +71,7 @@ export class TaskComponent {
     this.taskService.completeTask(id);
     this.tasks = this.taskService.getTasks(); // Refresh the task list
   }
-} **
+} 
 
 ## Open/Closed Principle (OCP):
 
@@ -364,4 +364,4 @@ export class NotificationComponent {
     this.notificationService.notify('Hello via SMS!');
   }
 
-Firebase: https://solid-principles-svfc-4a.web.app
+    Firebase: https://solid-principles-svfc-4a.web.app
